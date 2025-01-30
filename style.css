@@ -1,0 +1,400 @@
+:root {
+  --primary-color: #2C3E50; /* Warna utama (biru tua elegan) */
+  --secondary-color: #3498DB; /* Warna sekunder (biru cerah untuk kontras) */
+  --accent-color: #E74C3C; /* Warna aksen (merah lembut untuk elemen penting) */
+  --navbar-bg: rgba(44, 62, 80, 0.9); /* Warna navbar dengan transparansi */
+  --text-color: #333; /* Warna teks utama */
+  --light-text-color: #FFF; /* Warna teks terang */
+  --button-bg: #2980B9; /* Warna tombol */
+  --button-hover: #1A5276; /* Warna tombol saat hover */
+  --card-bg: #FFFFFF; /* Warna background kartu atau box */
+  --shadow-color: rgba(0, 0, 0, 0.1); /* Warna bayangan */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", serif;
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 5%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: var(--navbar-bg);
+}
+
+nav .logo {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: var(--button-bg);
+}
+
+nav .logo span {
+  color: var(--light-text-color);
+}
+
+nav .nav-links {
+  display: flex;
+  gap: 3.5rem;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+nav .nav-links a {
+  text-decoration: none;
+  color: var(--light-text-color);
+  transition: color .1s linear;
+}
+
+nav .nav-links a:hover {
+  color: var(--button-bg);
+}
+
+#hamburger {
+  display: none;
+}
+
+
+/* home */
+#home {
+  background: url('E Commerce Background Images - Free Download on Freepik.jfif') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+#home .overlay {
+  /* display: flex; */
+  max-width: 600px;
+  /* flex-direction: column; */
+  margin-top: 3rem;
+}
+
+#home .overlay h1 {
+  font-size: 2.5em;
+  color: var(--light-text-color);
+  cursor: default;
+}
+
+#home .overlay h1 span {
+  color: var(--button-bg);
+}
+
+#home .overlay p {
+  margin: 0.5rem 0 2.5rem;
+  cursor: default;
+  font-size: 1.2em;
+  font-weight: 200;
+  text-transform: capitalize;
+}
+
+#home .overlay a {
+  background-color: var(--button-bg);
+  padding: 12px 14px;
+  text-decoration: none;
+  color: var(--light-text-color);
+  border-radius: 5px;
+  transition: background-color .1s linear;
+}
+
+#home .overlay a:hover {
+  background-color: var(--button-hover);
+}
+
+/* about */
+
+#about {
+  background: #f5f5f5;
+  padding: 7rem 5%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.photo {
+  flex: 1 1 40%;
+}
+
+.photo img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.text {
+  flex: 1 1 50%;
+  line-height: 1.8;
+}
+
+.text h2 {
+  font-size: 3em;
+  color: var(--text-color);
+  margin-top: 2rem;
+}
+
+.text h2 span {
+  color: var(--button-bg);
+}
+
+.text p {
+  font-size: 1.1rem;
+  font-weight: 200;
+}
+
+
+.text .p-1 {
+  margin: 1rem 0 0.5rem;
+}
+
+/* menu */
+
+#menu {
+  padding: 7rem 5%;
+}
+
+#menu .title,.sub-title {
+  text-align: center;
+}
+
+#menu .title {
+  font-size: 3rem;
+  color: var(--text-color);
+}
+
+#menu .title span {
+  color: var(--button-bg);
+}
+
+#menu .sub-title {
+  margin: 0.7rem 0 4rem;
+  text-transform: capitalize;
+  font-weight: 300;
+  color: var(--text-color);
+}
+
+.menu-container {
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.box-img {
+  background: white;
+  padding: 40px 30px;
+  width: 19%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  text-align: center;
+  border-radius: 5px;
+  transition: transform .2s linear;
+}
+
+.box-img:hover {
+  transform: scale(1.03);
+}
+
+#menu .menu-container .box-img h3 {
+  color: var(--text-color);
+  font-size: 2rem;
+}
+
+.box-img p {
+  margin: 0.1rem 0 1.9rem;
+  font-weight: 300;
+}
+
+.box-img a {
+  text-decoration: none;
+  color: var(--light-text-color);
+  background-color: var(--button-bg);
+  padding: 12px;
+  border-radius: 5px;
+  transition: background-color .1s linear;
+}
+
+.box-img a:hover {
+  background-color: var(--button-hover);
+}
+
+.box-img img {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+#contact {
+  background: #e0e0e0;
+  padding: 7rem 5%;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 7rem;
+}
+
+form {
+  flex: 1 1 70%;
+}
+
+form h2 {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+form h2 span {
+  color: var(--button-bg);
+}
+
+
+form .btn-1 {
+  background-color: var(--button-bg);
+  font-size: 1.1rem;
+  padding: 10px 40px;
+  border: none;
+  color: var(--light-text-color);
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color .2s linear, transform .2s linear;
+}
+
+form .btn-1:hover {
+  background-color: var(--button-hover);
+  transform: scale(1.03);
+}
+/* form .text {
+  width: 100%;
+  } */
+  
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: var(--shadow-color);
+  border: 0.1px solid var(--text-color);
+  border-radius: 2px;
+}
+
+textarea {
+  height: 6rem;
+}
+
+input:focus {
+  border: 1px solid var(--secondary-color);
+}
+
+textarea:focus {
+  border: 1px solid var(--secondary-color);
+}
+
+.info {
+  flex: 1 1 60%;
+}
+
+.info h2 {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.info p {
+  line-height: 2;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: var(--button-bg);
+}
+
+.info p span {
+  font-weight: 900;
+  color: var(--text-color);
+}
+
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 3rem;
+}
+
+/* mobile */
+@media (max-width: 480px) {
+  html {
+    font-size: 80%;
+  }
+
+  #hamburger {
+    display: flex;
+    color: var(--light-text-color);
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    flex-direction: column;
+    width: 20rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+    padding: 2rem;
+    font-size: 2rem;
+    transition: 0.5s;
+  }
+
+  .nav-links a {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin: 0 0 1rem;
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .container {
+    flex-direction: column-reverse;
+  }
+
+  #home .overlay {
+    max-width: 300px;
+  }
+
+  .menu-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box-img {
+    width: 50%;
+  }
+  
+  .contact-container {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  input {
+    width: 90%;
+  }
+
+  textarea {
+    width: 90%;
+  }
+}
