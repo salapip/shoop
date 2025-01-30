@@ -87,7 +87,6 @@ nav .nav-links a:hover {
   /* display: flex; */
   max-width: 600px;
   /* flex-direction: column; */
-  margin-top: 3rem;
 }
 
 #home .overlay h1 {
@@ -341,7 +340,7 @@ footer {
 /* mobile */
 @media (max-width: 480px) {
   html {
-    font-size: 80%;
+    font-size: 85%;
   }
 
   #hamburger {
